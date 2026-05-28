@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio profissional de João Silva — Desenvolvedor Full-Stack" />
+  <title>João Silva — Portfolio</title>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23C9A55A'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia' font-size='18' font-weight='700' fill='%2305070D'%3EJS%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============== NAVBAR ============== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">JS<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#contact" class="nav-cta">Contato</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Olá, eu sou</p>
+      <h1 class="hero-title reveal">
+        João<br /><span class="gold italic">Silva</span>
+      </h1>
+      <p class="hero-role reveal">Desenvolvedor Full-Stack &amp; Arquiteto de Sistemas</p>
+      <p class="hero-desc reveal">
+        Transformo ideias complexas em soluções digitais elegantes — com foco em
+        performance, escalabilidade e experiência do usuário.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-n">5+</span>
+          <span class="stat-l">Anos de Experiência</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-n">40+</span>
+          <span class="stat-l">Projetos Entregues</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-n">15+</span>
+          <span class="stat-l">Clientes Satisfeitos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span>Role para baixo</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============== ABOUT ============== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-col reveal">
+          <div class="about-img-frame">
+            <!-- Substitua pelo caminho da sua foto -->
+            <div class="img-placeholder" aria-label="Foto de perfil">
+              <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="50" cy="38" r="24" fill="currentColor" opacity="0.3"/>
+                <path d="M10 110 Q10 70 50 70 Q90 70 90 110" fill="currentColor" opacity="0.3"/>
+              </svg>
+            </div>
+            <div class="img-border-accent"></div>
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <span class="section-label reveal">Sobre Mim</span>
+          <h2 class="section-title reveal">
+            Construindo o futuro<br /><em>um projeto por vez</em>
+          </h2>
+          <p class="body-text reveal">
+            Com mais de 5 anos de experiência em desenvolvimento de software, especializo-me em criar
+            aplicações robustas e escaláveis. Minha abordagem combina rigor técnico com sensibilidade
+            para design, garantindo produtos que não só funcionam perfeitamente, mas também encantam
+            os usuários.
+          </p>
+          <p class="body-text reveal">
+            Apaixonado por tecnologia e inovação, estou sempre buscando as melhores soluções para os
+            desafios mais complexos. Acredito que a excelência está nos detalhes.
+          </p>
+
+          <div class="info-card reveal">
+            <div class="info-row">
+              <span class="info-key">Localização</span>
+              <span class="info-val">São Paulo, Brasil</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Disponibilidade</span>
+              <span class="info-val available"><span class="dot"></span>Disponível para projetos</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Idiomas</span>
+              <span class="info-val">Português, Inglês</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary reveal" download>↓ Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SKILLS ============== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Competências</span>
+        <h2 class="section-title reveal">Stack &amp; Habilidades</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3 class="skill-cat">Frontend</h3>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">TypeScript</span>
+            <span class="tag">Next.js</span><span class="tag">Tailwind CSS</span>
+            <span class="tag">HTML5 / CSS3</span><span class="tag">Vue.js</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3 class="skill-cat">Backend</h3>
+          <div class="tags">
+            <span class="tag">Node.js</span><span class="tag">Python</span>
+            <span class="tag">Express</span><span class="tag">FastAPI</span>
+            <span class="tag">REST APIs</span><span class="tag">GraphQL</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3 class="skill-cat">Banco de Dados</h3>
+          <div class="tags">
+            <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span>
+            <span class="tag">Redis</span><span class="tag">MySQL</span>
+            <span class="tag">Prisma ORM</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3 class="skill-cat">DevOps &amp; Cloud</h3>
+          <div class="tags">
+            <span class="tag">Docker</span><span class="tag">AWS</span>
+            <span class="tag">CI/CD</span><span class="tag">Git / GitHub</span>
+            <span class="tag">Linux</span><span class="tag">Kubernetes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PROJECTS ============== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Portfólio</span>
+        <h2 class="section-title reveal">Projetos em Destaque</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="proj-card reveal">
+          <span class="proj-num" aria-hidden="true">01</span>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag">React</span><span class="ptag">Node.js</span><span class="ptag">PostgreSQL</span>
+            </div>
+            <h3 class="proj-title">Plataforma de Gestão Empresarial</h3>
+            <p class="proj-desc">Sistema ERP completo para PMEs, com módulos de finanças, RH, estoque e relatórios em tempo real. Reduziu o tempo de processamento em 60%.</p>
+            <div class="proj-links">
+              <a href="#" class="plink">Ver Demo →</a>
+              <a href="#" class="plink plink-sec">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card reveal">
+          <span class="proj-num" aria-hidden="true">02</span>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag">Next.js</span><span class="ptag">TypeScript</span><span class="ptag">Stripe</span>
+            </div>
+            <h3 class="proj-title">E-commerce de Alta Performance</h3>
+            <p class="proj-desc">Loja virtual headless com múltiplos gateways de pagamento e painel administrativo personalizado. 99,9% uptime garantido.</p>
+            <div class="proj-links">
+              <a href="#" class="plink">Ver Demo →</a>
+              <a href="#" class="plink plink-sec">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card reveal">
+          <span class="proj-num" aria-hidden="true">03</span>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag">Python</span><span class="ptag">FastAPI</span><span class="ptag">ML</span>
+            </div>
+            <h3 class="proj-title">Sistema de Análise Preditiva</h3>
+            <p class="proj-desc">API de machine learning para previsão de demanda e análise de comportamento de usuários. Aumentou a precisão das previsões em 45%.</p>
+            <div class="proj-links">
+              <a href="#" class="plink">Ver Demo →</a>
+              <a href="#" class="plink plink-sec">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card reveal">
+          <span class="proj-num" aria-hidden="true">04</span>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag">React Native</span><span class="ptag">Node.js</span><span class="ptag">MongoDB</span>
+            </div>
+            <h3 class="proj-title">App de Finanças Pessoais</h3>
+            <p class="proj-desc">Aplicativo mobile multiplataforma para controle financeiro com dashboards interativos, categorização automática e relatórios mensais.</p>
+            <div class="proj-links">
+              <a href="#" class="plink">Ver Demo →</a>
+              <a href="#" class="plink plink-sec">GitHub →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== EXPERIENCE ============== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Trajetória</span>
+        <h2 class="section-title reveal">Experiência Profissional</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-meta">
+            <span class="tl-date">2022 — Atual</span>
+            <span class="tl-co">TechCorp Brasil</span>
+          </div>
+          <div class="tl-content">
+            <h3 class="tl-title">Senior Full-Stack Developer</h3>
+            <p class="tl-desc">Liderei o desenvolvimento de microserviços críticos, reduzi latência em 40% e mentoreei uma equipe de 4 desenvolvedores juniores em práticas de clean code.</p>
+            <div class="tl-stack">
+              <span>React</span><span>Node.js</span><span>AWS</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-meta">
+            <span class="tl-date">2020 — 2022</span>
+            <span class="tl-co">Inovação Digital</span>
+          </div>
+          <div class="tl-content">
+            <h3 class="tl-title">Full-Stack Developer</h3>
+            <p class="tl-desc">Desenvolvimento de plataformas SaaS para clientes enterprise, com foco em escalabilidade, segurança e alta disponibilidade.</p>
+            <div class="tl-stack">
+              <span>Vue.js</span><span>Python</span><span>PostgreSQL</span><span>Redis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-meta">
+            <span class="tl-date">2018 — 2020</span>
+            <span class="tl-co">StartupXYZ</span>
+          </div>
+          <div class="tl-content">
+            <h3 class="tl-title">Frontend Developer</h3>
+            <p class="tl-desc">Construção do produto do zero ao lançamento, com foco em UX e performance. Aplicação atingiu 50 mil usuários ativos em 6 meses.</p>
+            <div class="tl-stack">
+              <span>React</span><span>TypeScript</span><span>Redux</span><span>Jest</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT ============== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-label reveal">Vamos Conversar</span>
+          <h2 class="section-title reveal">Tem um projeto<br /><em>em mente?</em></h2>
+          <p class="body-text reveal">
+            Estou sempre aberto a discutir novas oportunidades, projetos desafiadores
+            ou simplesmente trocar ideias sobre tecnologia.
+          </p>
+
+          <div class="contact-list reveal">
+            <a href="mailto:joao@exemplo.com" class="contact-item">
+              <div class="c-icon">✉</div>
+              <div>
+                <div class="c-label">E-mail</div>
+                <div class="c-value">joao@exemplo.com</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/joaosilva" class="contact-item" target="_blank" rel="noopener">
+              <div class="c-icon">in</div>
+              <div>
+                <div class="c-label">LinkedIn</div>
+                <div class="c-value">linkedin.com/in/joaosilva</div>
+              </div>
+            </a>
+            <a href="https://github.com/joaosilva" class="contact-item" target="_blank" rel="noopener">
+              <div class="c-icon">⌨</div>
+              <div>
+                <div class="c-label">GitHub</div>
+                <div class="c-value">github.com/joaosilva</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            </div>
+            <div class="field">
+              <label for="subject">Assunto</label>
+              <input type="text" id="subject" name="subject" placeholder="Sobre o projeto…" required />
+            </div>
+            <div class="field">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" placeholder="Descreva seu projeto ou ideia…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              Enviar Mensagem
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#home" class="footer-logo">JS<span>.</span></a>
+        <p class="footer-tagline">Construindo soluções com propósito e precisão.</p>
+        <nav class="footer-nav" aria-label="Links do rodapé">
+          <a href="#about">Sobre</a>
+          <a href="#skills">Habilidades</a>
+          <a href="#projects">Projetos</a>
+          <a href="#experience">Experiência</a>
+          <a href="#contact">Contato</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> João Silva. Todos os direitos reservados.</p>
+        <p>Desenvolvido com HTML puro &amp; ♥</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
